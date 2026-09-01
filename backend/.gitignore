@@ -1,10 +1,85 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+vendor/
 
-###> symfony/framework-bundle ###
-/.env.local
-/.env.local.php
-/.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# Backup environment files
+*.env.bak
+*.env.backup
+*.env.*.bak
+*.env.*.backup
+
+# =========================
+# Expo / React Native
+# =========================
+.expo/
+dist/
+web-build/
+
+# Metro
+.metro-health-check*
+
+# =========================
+# Native / Signing / Secrets
+# =========================
+*.orig.*
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+pnpm-debug.*
+
+# =========================
+# PHP / Symfony
+# =========================
 /var/
 /vendor/
-###< symfony/framework-bundle ###
+
+# PHPUnit
+.phpunit.result.cache
+
+# =========================
+# Database dumps / backups
+# =========================
+*.sql
+*.dump
+*.backup
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
